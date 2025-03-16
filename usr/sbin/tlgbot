@@ -43,7 +43,7 @@ command_start="Готов выполнять команды. Вот их спи�
 sleep 10
 
 ## Сообщение при старте бота
-curl -k -s -X POST -H "Charset: UTF-8" $api/sendMessage -d chat_id=$chat_id -d parse_mode=Markdown --data-urlencode text="*Бот запущен*" &> $telegram_log_file
+#curl -k -s -X POST -H "Charset: UTF-8" $api/sendMessage -d chat_id=$chat_id -d parse_mode=Markdown --data-urlencode text="*Бот запущен*" &> $telegram_log_file
 
 ## Клавиатура с функциональными кнопками, может быть возвращена с ответом бота, например, при запуске бота
 #keyboard='{"keyboard": [["/uptime","/wan_uptime"]], "keyboard": [["/wan_ip"]], "keyboard": [["/free","/loadavg","/last"]], "keyboard": [["/dhcp_clients","/wifi_clients"]], "keyboard": [["/summary"]],"resize_keyboard":true,"one_time_keyboard":false}'
